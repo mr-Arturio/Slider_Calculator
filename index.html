@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost Calculator</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+</head>
+<body>
+    <div class="calculator">
+        <h1>Cost Calculator</h1>
+        <div class="input-section">
+            <label for="treatment-cost">Treatment Cost</label>
+            <div class="input-wrapper">
+                <span class="currency-symbol">$</span>
+                <input type="text" id="treatment-cost" class="trt-cost" value="7995" min="0" max="10000">
+            </div>
+            <input type="range" id="cost-slider" min="0" max="10000">
+        </div>
+
+        <div class="input-section">
+            <label for="initial-payment">Initial Payment</label>
+            <div class="input-wrapper">
+                <span class="currency-symbol">$</span>
+                <input type="text" id="initial-payment" class="downpayment" value="2000" readonly>
+            </div>
+            <input type="range" id="payment-slider" min="0" max="7950">
+            <p class="option-description">Adjust the slider to choose an initial payment to reduce your monthly payment</p>
+        </div>
+
+        <div class="input-section">
+            <label for="term-length">Term Length</label>
+            <div class="input-wrapper">
+                <input type="text" id="term-length" class="terms" value="12" readonly>
+                <span class="months special">months</span>
+            </div>
+            <input type="range" id="term-slider" min="1" max="36">
+        </div>
+
+        <div class="result">
+            <h2>Interest-Free Monthly Payment Option</h2>
+            <div class="input-wrapper">
+                <span class="currency-symbol">$</span>
+                <input type="text" id="monthly-payment" readonly>
+                <span class="months">/month</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>
