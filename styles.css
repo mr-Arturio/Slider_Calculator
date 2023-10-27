@@ -31,6 +31,7 @@ label {
   display: block;
   font-weight: bold;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .input-wrapper {
@@ -71,11 +72,6 @@ input[type="range"] {
 .result {
   text-align: center;
   margin-top: 30px;
-}
-
-h2 {
-  font-size: 1.5em;
-  color: #333;
 }
 
 .months {
