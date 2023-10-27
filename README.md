@@ -1,9 +1,10 @@
-** Notes
+## Notes
 
 done:
-- vanila CSS style and HTML
-- vanila JS logic with  DOM manipulation and reading
+- vanilla CSS style and HTML
+- vanilla JS logic with  DOM manipulation and reading
 
 need:
-- add max cap for the users input
+- add max cap for the user's input
 - add style variant (original version is using Bootstrap)
+- ask what needs to be done/fixed/added
