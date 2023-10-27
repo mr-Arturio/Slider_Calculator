@@ -14,7 +14,24 @@ function updateMonthlyPayment() {
 // Function to update slider position when a number is typed into an input field
 function updateSliderFromInput(inputId, sliderId) {
   const inputValue = parseInt(document.getElementById(inputId).value);
-  document.getElementById(sliderId).value = inputValue;
+  const slider = document.getElementById(sliderId);
+
+  if (inputId === "initial-payment") {
+    const treatmentCost = parseInt(document.getElementById("treatment-cost").value);
+    if (inputValue > treatmentCost) {
+      // Prevent "Initial Payment" from being more than "Treatment Cost"
+      document.getElementById(inputId).value = treatmentCost;
+      slider.value = treatmentCost;
+    } else {
+      slider.value = inputValue;
+    }
+
+    // Set the maximum value of the "payment-slider" based on the "treatment-cost"
+    slider.max = treatmentCost;
+  } else {
+    slider.value = inputValue;
+  }
+
   updateMonthlyPayment();
 }
 
@@ -26,7 +43,7 @@ document.getElementById("cost-slider").addEventListener("input", function () {
 
 document.getElementById("payment-slider").addEventListener("input", function () {
   document.getElementById("initial-payment").value = this.value;
-  updateMonthlyPayment();
+  updateSliderFromInput("initial-payment", "payment-slider");
 });
 
 document.getElementById("term-slider").addEventListener("input", function () {
