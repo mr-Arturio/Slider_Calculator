@@ -23,6 +23,14 @@ html .ui-button.ui-state-disabled:active,
   width: 1.25em !important;
 }
 
+body {
+  color: #a4abae;
+  font-family: Montserrat, sans-serif;
+  line-height: 1.7;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
 .ui-slider-horizontal .ui-slider-handle {
   top: -0.7em !important;
   margin-left: -0.5em !important;
