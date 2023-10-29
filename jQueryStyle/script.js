@@ -1,8 +1,4 @@
 const SliderModule = (function () {
-  // Private variables
-  const __hs_messages = {};
-  let $interest = 0;
-
   // Private functions
   const update = () => {
     const $treatmentCost = $("#treatment-cost").val();
@@ -80,8 +76,7 @@ const SliderModule = (function () {
         } else {
           $("#slider2").slider("option", "value", "1");
         }
-
-             });
+      });
 
       // Initialize and handle changes for the treatment cost input field
       update();
