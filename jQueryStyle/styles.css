@@ -1,8 +1,4 @@
 /* Styles for jQuery UI Sliders */
-.ui-slider-horizontal {
-  height: 1.8em !important;
-}
-
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default,
@@ -38,135 +34,94 @@ body {
 
 .ui-slider .ui-slider-handle {
   display: block !important;
-}
-
-.ui-slider .ui-slider-handle {
   z-index: 999;
-}
-
-
-.ui-slider {
-  position: relative;
-  text-align: left
-}
-
-.ui-slider .ui-slider-handle {
   position: absolute;
   z-index: 2;
   width: 1.2em;
   height: 1.2em;
   cursor: default;
   -ms-touch-action: none;
-  touch-action: none
+  touch-action: none;
+}
+
+.ui-slider {
+  position: relative;
+  text-align: left;
+  margin: 0.31em 0.03em;
+  width: 100%;
+  height: 1.88em;
+  color: blue;
+  background: #9ace6e !important;
+  border-radius: 0.62em !important;
+  border: 0 !important;
 }
 
 .ui-slider .ui-slider-range {
   position: absolute;
   z-index: 1;
-  font-size: .7em;
+  font-size: 0.7em;
   display: block;
   border: 0;
-  background-position: 0 0
+  background-position: 0 0;
 }
 
-
-
-.ui-slider {
-  margin: .31em .03em;
-  width: 100%;
-  height: 1.88em;
-  color: blue;
-  background: #9ace6e !important;
-  border-radius: .62em !important;
-}
-
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
   .height-adj {
-      margin-top:130px !important
+    margin-top: 130px !important;
   }
 }
 
-@media(min-width: 767px) {
+@media (min-width: 767px) {
   .main .the-content {
-      margin-top:180px
+    margin-top: 180px;
   }
 }
 
-@media(max-width: 766px) {
+@media (max-width: 766px) {
   .main .the-content {
-      margin-top:50px
+    margin-top: 50px;
   }
-}
-
-.ui-slider-horizontal {
-  height: 1.8em !important
-}
-
-.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default,.ui-button,html .ui-button.ui-state-disabled:hover,html .ui-button.ui-state-disabled:active,.ui-state-hover,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus,.ui-widget-header .ui-state-focus,.ui-button:hover,.ui-button:focus {
-  font-weight: normal !important;
-  background: #161716 !important;
-  height: 3em !important;
-  width: 1.25em !important;
-}
-
-.ui-slider-horizontal .ui-slider-handle {
-  top: -0.7em !important;
-  margin-left: -0.5em !important
-}
-
-.ui-slider {
-  margin: .31em .03em;
-  width: 100%;
-  height: 1.88em;
-  color: blue;
-  background: #9ace6e !important;
-  border-radius: .62em !important
 }
 
 .cost-calculator {
   width: 70%;
-  margin: auto
-}
-
-h1 {
-  font-size: 1.3em;
-  font-weight: 500
+  margin: auto;
 }
 
 .treatment-cost-wrapper.col-md-12 {
   text-align: center;
   background-color: #f6f5f5;
-  border-radius: .47em;
+  border-radius: 0.47em;
   padding: 1.25em;
   margin-right: 2%;
   vertical-align: middle;
   margin-bottom: 1em;
   float: left;
-  width: 100%
+  width: 100%;
 }
 
 .down-payment-block.col-md-12 {
   text-align: center;
   background-color: #f6f5f5;
-  border-radius: .47em;
+  border-radius: 0.47em;
   padding: 1.25em;
   margin-right: 2%;
   vertical-align: middle;
   margin-bottom: 1em;
   float: left;
-  width: 100%
+  width: 100%;
 }
 
 .payment-options-monthly.col-md-12 {
   text-align: center;
   background-color: #f6f5f5;
-  border-radius: .47em;
+  border-radius: 0.47em;
   padding: 1.25em;
   margin-right: 2%;
   vertical-align: middle;
   margin-bottom: 1em;
   float: left;
-  width: 100%
+  width: 100%;
 }
 
 input#amount2 {
@@ -180,11 +135,13 @@ input#amount2 {
   padding: 0;
   color: #4eb5e9;
   font-size: 2em;
-  margin: 0 0 0 .09em;
-  line-height: 1.7
+  margin: 0 0 0 0.09em;
+  line-height: 1.7;
 }
 
-input#treatment-cost,input#amount,input#days {
+input#treatment-cost,
+input#amount,
+input#days {
   width: 2.81em;
   display: inline-block;
   border-radius: 0;
@@ -195,16 +152,18 @@ input#treatment-cost,input#amount,input#days {
   padding: 0;
   color: #4eb5e9;
   font-size: 2em;
-  margin: 0 0 0 .09em;
-  line-height: 1.7
+  margin: 0 0 0 0.09em;
+  line-height: 1.7;
 }
 
-.treatment-cost-wrapper label,.down-payment-block label,.payment-options-monthly label {
+.treatment-cost-wrapper label,
+.down-payment-block label,
+.payment-options-monthly label {
   text-align: center;
   display: inline-block;
   width: 100%;
   font-weight: normal;
-  font-size: 1.6em
+  font-size: 1.6em;
 }
 
 .option-description {
@@ -213,54 +172,55 @@ input#treatment-cost,input#amount,input#days {
   display: block;
   margin: 0 0 1em 0;
   width: 100%;
-  text-align: center
+  text-align: center;
 }
 
 .months {
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: 600;
   display: inline-block;
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 span.amount-text {
   font-size: 2em;
   position: relative;
-  left: .22em
+  left: 0.22em;
 }
 
 span.months.special {
-  margin-left: -3.7em
+  margin-left: -3.7em;
 }
 
 .amount-text.special-sign {
   width: 47%;
   text-align: right;
   float: left;
-  font-size: 2em
+  font-size: 2em;
 }
 
 .inputtext {
-  text-align: left
+  text-align: left;
 }
 
-.treatment-cost-value,.initial-payment-value {
+.treatment-cost-value,
+.initial-payment-value {
   width: 100%;
-  display: block
+  display: block;
 }
 
 .request-button-wrapper {
-  margin: .31em 0
+  margin: 0.31em 0;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .cost-calculator {
-      width:90%;
-      margin: auto
+    width: 90%;
+    margin: auto;
   }
 
-  .treatment-cost-value,.initial-payment-value {
-      width: 90%
+  .treatment-cost-value,
+  .initial-payment-value {
+    width: 90%;
   }
 }
-
