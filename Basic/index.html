@@ -59,8 +59,8 @@
             value="12"
             min="0"
             max="20"
-            
-                      /> <!--we can add "readonly" to the input field to prevent users from changing the ammount-->
+          />
+          <!--we can add "readonly" to the input field to prevent users from changing the ammount-->
           <span class="months special">months</span>
         </div>
         <input type="range" id="term-slider" min="1" max="20" />
@@ -73,7 +73,7 @@
         >
         <div class="input-wrapper">
           <span class="currency-symbol">$</span>
-          <input type="text" id="monthly-payment" readonly />
+          <input type="number" id="monthly-payment" min="0" max="0" readonly />
           <span class="months">/month</span>
         </div>
       </div>

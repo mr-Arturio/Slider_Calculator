@@ -11,16 +11,11 @@ body {
 
 .calculator {
   max-width: 400px;
-  margin: 0 auto;
+  margin: 2em auto;
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-  text-align: center;
-  color: #333;
 }
 
 .input-section {
@@ -40,6 +35,8 @@ label {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 5px;
+  width: 50%;
+  margin: auto;
 }
 
 .currency-symbol {
@@ -49,7 +46,7 @@ label {
   color: #333;
 }
 
-input[type="text"] {
+input[type="number"] {
   flex: 1;
   border: none;
   outline: none;
