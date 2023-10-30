@@ -23,21 +23,22 @@ html .ui-button.ui-state-disabled:active,
 .ui-button:focus {
   font-weight: normal !important;
   background: #dec552 !important;
-  height: 1.8em !important;
-  width: 1.8em !important;
+  height: 1.4em !important;
+  width: 1.4em !important;
   border-radius: 50%;
 }
 
 
 .ui-slider-horizontal .ui-slider-handle {
-  top: -0.7em !important;
+  top: 50%; /* Position it at 50% of the parent's height */
+  transform: translateY(-52%);
   margin-left: -0.5em !important;
 }
 
 .ui-slider-handle {
   display: block !important;
   z-index: 2;
-  position: absolute;
+  position: relative;
   cursor: pointer;
   -ms-touch-action: none;
   touch-action: none;
@@ -48,7 +49,7 @@ html .ui-button.ui-state-disabled:active,
   position: relative;
   text-align: left;
   margin: 0.5em auto;
-  width: 80%;
+  width: 82%;
   height: .7em;
   color: rgb(0, 255, 89);
   background: #2899bc !important;
@@ -93,6 +94,7 @@ html .ui-button.ui-state-disabled:active,
   background-color: #f6f5f5;
   border-radius: 0.47em;
   padding: 1.25em;
+  margin-top: 1em;
   margin-right: 2%;
   vertical-align: middle;
   margin-bottom: 1em;
