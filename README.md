@@ -13,12 +13,16 @@ need:
 - add style variant
 - ask what needs to be done/fixed/added
 - Error Handling: When dealing with user input and calculations,  For example, if the user enters non-numeric values or if there are issues with calculations, you might want to provide feedback or prevent incorrect input.
+- ❗Deploy for presentaation
 ___
 ### Variants
 ___
 #### Basic
 ![](./docs/BasicStyle.png)
+___
+#### Fancy2
+![](./docs/Blue&Orange.png)
 
 ---
-#### Fancy 
+#### Fancy (did not pass)
 ![](./docs/jQueryStyle.png)
