@@ -19,14 +19,19 @@ const SliderModule = (function () {
     $(sliderSelector).slider(options);
   };
 
-  const createSlider = (sliderSelector, inputSelector) => {
+  const createSlider = (sliderSelector, inputSelector, maxInputSelector) => {
     initSlider(sliderSelector, {
       slide: function (event, ui) {
+        const $maxValue = $(maxInputSelector).attr('max');
+        if (ui.value > $maxValue) {
+          ui.value = $maxValue;
+        }
         $(this).parent().find(inputSelector).val(ui.value);
         update();
       },
       create: function (event, ui) {
         $(this).slider("value", $(this).parent().find(inputSelector).val());
+        update();
       },
     });
   };
@@ -40,39 +45,38 @@ const SliderModule = (function () {
         min: 50,
         step: 50,
       });
-      createSlider("#slider9", ".trt-cost");
+      createSlider("#slider9", ".trt-cost", "#treatment-cost");
 
       initSlider("#slider1", {
         max: 10000,
         min: 0,
         step: 50,
       });
-      createSlider("#slider1", ".downpayment");
+      createSlider("#slider1", ".downpayment", "#amount");
 
       initSlider("#slider2", {
         max: 20,
         min: 1,
         step: 1,
       });
-      createSlider("#slider2", ".terms");
+      createSlider("#slider2", ".terms", "#days");
 
       $("#days").val($("#slider2").slider("value"));
 
       $("#days").change(function (event) {
         const data = $("#days").val();
+        const $maxValue = $("#days").attr('max');
+        if (parseInt(data) > $maxValue) {
+          $("#days").val($maxValue);
+        }
         if (data.length > 0) {
-          if (parseInt(data) >= 0 && parseInt(data) <= 31) {
-            $("#slider2").slider("option", "value", data);
-          } else {
-            if (parseInt(data) < 1) {
-              $("#days").val("1");
-              $("#slider2").slider("option", "value", "1");
-            }
-            if (parseInt(data) > 31) {
-              $("#days").val("31");
-              $("#slider2").slider("option", "value", "31");
-            }
+          if (parseInt(data) < 1) {
+            $("#days").val("1");
           }
+          if (parseInt(data) > 31) {
+            $("#days").val("31");
+          }
+          $("#slider2").slider("option", "value", $("#days").val());
         } else {
           $("#slider2").slider("option", "value", "1");
         }
@@ -81,6 +85,20 @@ const SliderModule = (function () {
       // Initialize and handle changes for the treatment cost input field
       update();
       $("#treatment-cost").on("change paste keyup", function () {
+        const $maxValue = $(this).attr('max');
+        if (parseInt($(this).val()) > $maxValue) {
+          $(this).val($maxValue);
+        }
+        update();
+      });
+
+      // Initialize and handle changes for the initial payment input field
+      update();
+      $("#amount").on("change paste keyup", function () {
+        const $maxValue = $(this).attr('max');
+        if (parseInt($(this).val()) > $maxValue) {
+          $(this).val($maxValue);
+        }
         update();
       });
     });
@@ -91,4 +109,5 @@ const SliderModule = (function () {
     initialize: initialize,
   };
 })();
+
 SliderModule.initialize();

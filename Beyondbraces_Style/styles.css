@@ -144,7 +144,7 @@ input#amount2 {
 input#treatment-cost,
 input#amount,
 input#days {
-  width: 2.81em;
+  width: 3.3em;
   display: inline-block;
   border-radius: 0;
   background-color: transparent;
