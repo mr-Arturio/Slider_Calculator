@@ -1,0 +1,226 @@
+body {
+  color: #a4abae;
+  font-family: Montserrat, sans-serif;
+  line-height: 1.7;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+/* Styles for jQuery UI Sliders */
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active,
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus {
+  font-weight: normal !important;
+  background: #dec552 !important;
+  height: 2.25em !important;
+  width: 2.25em !important;
+  border-radius: 50%;
+}
+
+
+.ui-slider-horizontal .ui-slider-handle {
+  top: -0.7em !important;
+  margin-left: -0.5em !important;
+}
+
+.ui-slider-handle {
+  display: block !important;
+  z-index: 2;
+  position: absolute;
+  cursor: pointer;
+  -ms-touch-action: none;
+  touch-action: none;
+}
+
+
+.ui-slider {
+  position: relative;
+  text-align: left;
+  margin: 0.31em 0.03em;
+  width: 100%;
+  height: 1.1em;
+  color: rgb(0, 255, 89);
+  background: #2899bc !important;
+  border-radius: 0.62em !important;
+  border: 0 !important;
+}
+
+.ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  font-size: 0.7em;
+  display: block;
+  border: 0;
+  background-position: 0 0;
+}
+
+@media (min-width: 1024px) {
+  .height-adj {
+    margin-top: 130px !important;
+  }
+}
+
+@media (min-width: 767px) {
+  .main .the-content {
+    margin-top: 180px;
+  }
+}
+
+@media (max-width: 766px) {
+  .main .the-content {
+    margin-top: 50px;
+  }
+}
+
+.cost-calculator {
+  width: 60%;
+  margin: auto;
+}
+
+.treatment-cost-wrapper.col-md-12 {
+  text-align: center;
+  background-color: #f6f5f5;
+  border-radius: 0.47em;
+  padding: 1.25em;
+  margin-right: 2%;
+  vertical-align: middle;
+  margin-bottom: 1em;
+  float: left;
+  width: 100%;
+}
+
+.down-payment-block.col-md-12 {
+  text-align: center;
+  background-color: #f6f5f5;
+  border-radius: 0.47em;
+  padding: 1.25em;
+  margin-right: 2%;
+  vertical-align: middle;
+  margin-bottom: 1em;
+  float: left;
+  width: 100%;
+}
+
+.payment-options-monthly.col-md-12 {
+  text-align: center;
+  background-color: #f6f5f5;
+  border-radius: 0.47em;
+  padding: 1.25em;
+  margin-right: 2%;
+  vertical-align: middle;
+  margin-bottom: 1em;
+  float: left;
+  width: 100%;
+}
+
+input#amount2 {
+  width: 3.6em;
+  display: inline-block;
+  border-radius: 0;
+  background-color: transparent;
+  box-shadow: none;
+  border: 0;
+  text-align: left;
+  padding: 0;
+  color: #268fb7;
+  font-size: 2em;
+  margin: 0 0 0 0.09em;
+  line-height: 1.7;
+}
+
+input#treatment-cost,
+input#amount,
+input#days {
+  width: 2.81em;
+  display: inline-block;
+  border-radius: 0;
+  background-color: transparent;
+  box-shadow: none;
+  border: 0;
+  text-align: left;
+  padding: 0;
+  color: #268fb7;
+  font-size: 2em;
+  margin: 0 0 0 0.09em;
+  line-height: 1.7;
+}
+
+.treatment-cost-wrapper label,
+.down-payment-block label,
+.payment-options-monthly label {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  font-weight: normal;
+  font-size: 1.6em;
+}
+
+.option-description {
+  font-size: 1.04em;
+  color: #1e1410;
+  display: block;
+  margin: 0 0 1em 0;
+  width: 100%;
+  text-align: center;
+}
+
+.months {
+  font-size: 0.8em;
+  font-weight: 600;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+span.amount-text {
+  font-size: 2em;
+  position: relative;
+  left: 0.22em;
+}
+
+span.months.special {
+  margin-left: -3.7em;
+}
+
+.amount-text.special-sign {
+  width: 47%;
+  text-align: right;
+  float: left;
+  font-size: 2em;
+}
+
+.inputtext {
+  text-align: left;
+}
+
+.treatment-cost-value,
+.initial-payment-value {
+  width: 100%;
+  display: block;
+}
+
+.request-button-wrapper {
+  margin: 0.31em 0;
+}
+
+@media (max-width: 768px) {
+  .cost-calculator {
+    width: 90%;
+    margin: auto;
+  }
+
+  .treatment-cost-value,
+  .initial-payment-value {
+    width: 90%;
+  }
+}
