@@ -43,14 +43,14 @@ const SliderModule = (function () {
       createSlider("#slider9", ".trt-cost");
 
       initSlider("#slider1", {
-        max: 7995,
+        max: 10000,
         min: 0,
         step: 50,
       });
       createSlider("#slider1", ".downpayment");
 
       initSlider("#slider2", {
-        max: 36,
+        max: 20,
         min: 1,
         step: 1,
       });

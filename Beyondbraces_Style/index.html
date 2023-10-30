@@ -25,7 +25,7 @@
                 </div>
                 <div class="inputtext">
                   <input
-                    type="text"
+                    type="number"
                     class="trt-cost"
                     id="treatment-cost"
                     value="7995"
@@ -51,10 +51,11 @@
                 <div class="inputtext">
                   <input
                     class="downpayment"
-                    type="text"
+                    type="number"
                     id="amount"
                     value="2000"
-                    readonly=""
+                    min="0"
+                    max="10000"
                   />
                 </div>
               </div>
@@ -90,11 +91,7 @@
               <input id="amount2" type="text" readonly="" /><span class="months"
                 >/month</span
               >
-              <input
-                id="amount4"
-                type="hidden"
-                value="499.5833333333333"
-              /><br />
+           
             </div>
           
         </div>
