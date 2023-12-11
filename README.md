@@ -17,10 +17,10 @@ need:
 ___
 ### Variants
 ___
-#### Basic
+#### Basic - https://slider-calculator.vercel.app/
 ![](./docs/BasicStyle.png)
 ___
-#### Fancy2
+#### Fancy2 - https://slider-calculator-jraf.vercel.app/
 ![](./docs/Blue&Orange.png)
 
 ---
